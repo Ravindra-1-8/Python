@@ -19,3 +19,26 @@ print(P1[0:5])"""
 """P1 = "Python"
 print(P1[::-1])"""
 # output: "nohtyP"
+
+#Intermediate Problems
+#Problem 1: Print string except first and last character
+"""I = "Programming"
+print(I[1:10]) #print(I[1:-1])"""
+
+#Problem 2: Print first half of a string.
+C = "Computer"
+"""print(C[:4])"""
+# output: "Comp"
+
+#Problem 3: Print second half of the string.
+"""print(C[4:])"""
+#output: "uter"
+
+#Problem 4: Print every third character.
+"""E = "abcdefghijklmnopqrstyvwxyz"
+print(E[::3])"""
+#Output: "adgjmpsvy"
+
+#Problem 5: Reverse only first 5 characters.
+"""R = "PythonProgramming"
+print(R[:5][::-1]+R[5:])"""
