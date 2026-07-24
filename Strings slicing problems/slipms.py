@@ -42,3 +42,30 @@ print(E[::3])"""
 #Problem 5: Reverse only first 5 characters.
 """R = "PythonProgramming"
 print(R[:5][::-1]+R[5:])"""
+
+#Challenge Problems.
+#Problem 11: Swap the first and last 3 characters of a string.
+"""Input = "Programming"
+print(Input[-3:]+Input[3:8]+Input[:3])"""
+
+"""#Problem 13: Print string in reverse, skipping every alternate character.
+PS = "PythonProgramming"
+print(PS[::2][::-1])
+
+#Problem 14: Remove first 2 and last 2 characters.
+print(PS[2:15])"""
+
+"""#Problem 15 : Print 01234, 56789, 02468, 97531
+Given = "0123456789"
+print(Given[0:5])
+print(Given[5:10])
+print(Given[::2])
+print(Given[::-1])
+print(Given[::-2])"""
+
+#Probelm 12: Extract the middle 3 characters
+Given = "Computer"
+print(Given[3:6])
+mid = len(Given)//2
+print(Given[mid-2:mid+1])
+#output: put
