@@ -33,6 +33,3 @@ print(a.capitalize())"""
 print(s.swapcase())
 a = "Hello WORLD"
 print(a.swapcase())"""
-#Problem 11:
-s = ["2026","07","27"]
-print()
