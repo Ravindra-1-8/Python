@@ -1,5 +1,6 @@
 s = input()
 s2 = s.lower()
+
 a = s2.count("a")
 e = s2.count("e")
 i = s2.count("i")
