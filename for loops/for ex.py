@@ -1,4 +1,4 @@
-message = "Hello, World!"
+message = "Hello, World! "
 
 
 for char in message:
