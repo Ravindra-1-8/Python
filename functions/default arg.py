@@ -4,5 +4,5 @@ def greet_user(name, greetings="Hello"):
 greetings1 = greet_user("Bob")
 greetings2 = greet_user("Charlie", "Hi")
 
-print(greetings1)
-print(greetings2)
+print(greetings1) #Ouput: Hello! Bob.
+print(greetings2) #Ouput:  Hi! Charlie.
