@@ -1,1 +1,0 @@
-print(f"Value of b is: {b}") 
