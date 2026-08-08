@@ -20,5 +20,9 @@ r.pop()
 print(r)
 
 # 5. index()
-r.index(0)
-print(r)
+print(r.index(9))
+
+
+i = ['raj', 'anna','raj']
+print(i.count('raj'))
+print(i.reverse(9))
