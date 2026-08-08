@@ -1,9 +1,27 @@
-def convunits(a):
-    con1 = a * (9/5) + 32
-    con2 = 273 + a
-    con3 = (a - 32) * 5/9
-    print(f"Temp in Fahrenheit:{con1}")
-    print(f"Tem in Celsius:{con2}")
-    print(f"Tem in Kelvin:{con3}")
-x = int(input("Give value of a: "))
+def convunits(x):
+    if unit == "C":
+        f = x * (9/5) + 32
+        k = 273.15 + x
+
+        print(f"Temp in Fahrenheit:{f}")
+        print(f"Tem in Kelvin:{k}")
+
+    elif unit == "F":
+        c = (x - 32) * 5/9
+        k = 273.15 + c 
+        print(f"Tem in Celsius:{c}")
+        print(f"Temp in Kelvin:{k}")
+
+    elif unit == "K":
+        c = (x - 32) * 5/9
+        f = c * (9/5) + 32
+        print(f"Temp in Celsius:{c}")
+        print(f"Temp in Fahrenhiet:{f}")
+    else:
+        print("Invalid Unit.")
+
+
+x = float(input("Enter Unit: "))
+unit = input("Enter Units(C/F/K:)").upper()
+
 convunits(x)
