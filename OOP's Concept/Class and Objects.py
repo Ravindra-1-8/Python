@@ -3,6 +3,7 @@ class Computer:
         print("i5, 16gb, 1TB")
 
 a = '0'
-print(type(a))
+print(type(a)) #output: <class 'str'> str is inbuilt class.
+
 com1 = Computer()
-print(type(com1))
+print(type(com1)) #output: <class '__main__.Computer'> while Computer is a user-defined class.
