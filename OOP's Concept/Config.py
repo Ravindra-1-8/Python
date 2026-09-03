@@ -10,3 +10,6 @@ Computer.config(com2)  #output: i5, 16gb, 1TB.
 
 com1.config()  #output: i5, 16gb, 1TB.
 com2.config()  #output: i5, 16gb, 1TB.
+
+a = 5
+print(a.bit_length())  #output: 3
