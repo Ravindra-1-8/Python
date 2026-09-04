@@ -1,9 +1,9 @@
 class Computer:
-    def config(self):
-     print("i5, 16GB, 1TB")
-    
-com1 = Computer()
+    def __init__(self):
+        print("This is a Computer class constructor.")
+        
+com1 = Computer() # This is Object creation.
 com2 = Computer()
 
-com1.config()
-com2.config() # We can call the config method using the object of the class.
+com1.__init__()
+com2.__init__()
