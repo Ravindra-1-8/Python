@@ -36,6 +36,8 @@ def quiz():
         }
     ]
     
+    
+    
     score = 0
     
     for i, q in enumerate(questions, start = 1):
@@ -50,6 +52,8 @@ def quiz():
             print("Correct!")
         else:
             print(f"Wrong! The correct answer is: {q['answer']}")
+        
+        
         
     total = len(questions)
     print(f"Quiz Completed!: {score}/{total}")
