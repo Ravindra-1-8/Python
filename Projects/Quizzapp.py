@@ -20,7 +20,7 @@ def quiz():
             "answer": "B"
         },
         {
-            "quiestion": "What is the largest planet in our solar system?",
+            "question": "What is the largest planet in our solar system?",
             "options": ["A. Jupiter", "B. Pluto", "C. Earth", "D.Saturn"],
             "answer": "A"
         },
@@ -43,13 +43,14 @@ def quiz():
     for i, q in enumerate(questions, start = 1):
         print(f"\nQuestion {i} : {q['question']}")
         
-        for option in q['options']:
+        for option in q["options"]:
             print(option)
             
         answer = input("Your answer (A/B/C/D): ").strip().upper()
         
         if answer == q['answer']:
             print("Correct!")
+            score += 1
         else:
             print(f"Wrong! The correct answer is: {q['answer']}")
         
@@ -70,7 +71,7 @@ def quiz():
     
     retry = input("Do you want to try again (Y/N): ").lower()
     
-    if retry =='Y':
+    if retry =='y':
         quiz()
         
 quiz() 
