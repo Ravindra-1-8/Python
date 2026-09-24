@@ -15,8 +15,8 @@ def withdraw(amount):
         print("Sorry! Insufficient balance.\n")
     else:
         balance -= amount
-        transaction_history.appent(f"Withdrew:{amount}/-")
-        print(f"{amount}/- withdrawn successfully.\n")
+        transaction_history.append(f"Withdrawn {amount}/-")
+        print(f"{amount} withdrawn successfully.\n")
         
 def check_balance():
     print(f"Current balance: {balance}\n")
@@ -35,26 +35,26 @@ def view_transaction_history():
         deposit = sum(1 for t in transaction_history if "Deposit" in t)
         withdraw = sum(1 for t in transaction_history if "Withdraw" in t)
         print(f"\n Total deposits: {deposit}")
-        print(f"Total withdrawals: {withdraw}\n")
+        print(f"\nTotal withdrawals: {withdraw}")
         
 def menu():
     
     while True:
-        print("Welcome to the Banking App")
+        print("\nWelcome to the Banking App")
         print("1. Deposit")
         print("2. Withdraw")
         print("3. Check Balance")
         print("4. View Transaction History")
         print("5. Exit")
         
-        choice = input("Enter your choice: \n")
+        choice = input("Enter your choice: ")
         
         if choice == '1':
-            amount = float(input("Enter amount to deposit:\n"))
+            amount = float(input("Enter amount to deposit: "))
             deposit(amount)
             
         elif choice == '2':
-            amount = float(input("Enter amount to withdraw:\n"))
+            amount = float(input("Enter amount to withdraw:"))
             withdraw(amount)
             
         elif choice == '3':
