@@ -40,7 +40,7 @@ def view_transaction_history():
 def menu():
     
     while True:
-        print("\nWelcome to the Banking App")
+        print("\nWelcome to the Banking Apps")
         print("1. Deposit")
         print("2. Withdraw")
         print("3. Check Balance")
